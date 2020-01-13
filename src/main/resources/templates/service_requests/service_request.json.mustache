@@ -1,0 +1,15 @@
+{
+    "id" : "{{id}}",
+    "case_id": "{{caseId}}",
+    "created_at": "{{createdAt}}",
+    "updated_at": "{{updatedAt}}",
+    "service_request_fulfillment":
+        {{#serviceRequestFulfillments}}
+            {{>service_request_fulfillments/service_request_fulfillment}}
+        {{/serviceRequestFulfillments}},
+    "service_request_events": [
+        {{#serviceRequestEvents}}
+            {{>service_request_events/service_request_event}}
+        {{/serviceRequestEvents}}
+    ]
+}
